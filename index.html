@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="h100b" style="overflow: hidden">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>欢迎访问</title>
+  <script type="text/javascript">
+    //配置登录界面的url，点击退出的时候会需要该地址
+    // var loginSysUrl="http://localhost:8080/eplatMg/";
+    // var webSysUrl="http://localhost:8080/eplatClient/";
+    // var webPackName="/eplatMg/";
+    var dev=true;
+    if(dev){
+      //      快速开发系统地址
+      var loginSysUrl="http://127.0.0.1:8080/";
+      var devSysUrl="http://localhost:8888";
+      var webSysUrl="http://localhost:8081";
+      var webPackName="";
+      var sysAddress="http://localhost:8080";
+    }else{
+      var loginSysUrl="http://127.0.0.1:8080/";
+      var devSysUrl="http://localhost:8888";
+      var webSysUrl="http://localhost:8081";
+      var webPackName="";
+      var sysAddress="http://localhost:8080";
+    }
+
+  </script>
+  <!--全局基础样式-->
+  <link rel="stylesheet" href="./static/css/src/assets/css/theme/default/Index.css"/>
+  <link rel="stylesheet" href="./static/css/src/assets/css/portal/skin/skin01.css"/>
+  <link rel="stylesheet" href="./static/css/src/assets/css/pages/skin/Index.css"/>
+  <link href="./static/layoutCss/css/LeftMenuRouter.css" rel="stylesheet" type="text/css">
+  <!--字体样式-->
+  <link rel="stylesheet" href="./static/iconfont/iconfont.css"/>
+  <link rel="stylesheet" href="./static/protal/icons/default/fonts/plane/iconfont.css"/>
+  <link rel="stylesheet" href="./static/devFont/devIcon.css"/>
+
+  <script type="text/javascript" src="./static/plugin/common.min.js"></script>
+  <script type="text/javascript" src="./static/dx/dxExtend.all.min.js"></script>
+
+  <script type="text/javascript" src="./static/plugin/plugin.min.js"></script>
+  <script type="text/javascript" src="./static/plugin/goForm.min.js"></script>
+  <script type="text/javascript" src="./static/plugin/utils.min.js"></script>
+
+  <script type="text/javascript" src="./static/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="./static/jquery-table2excel-master/dist/jquery.table2excel.js"></script>
+
+
+</head>
+<body class="h100b" style="overflow: hidden">
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>
